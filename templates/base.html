@@ -3,6 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        .block{
+            border: 2px solid black;
+            block-size: border-box;
+            width: 90%;
+            margin: 1rem auto;
+            padding: 1rem;
+            transition: 0.25s ease-in-out;
+            border-radius: 1rem;
+        }
+        .block:hover{
+            transform: perspective(1000px) translateZ(20px);
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
 <header><h1>Header</h1></header>
