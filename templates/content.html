@@ -1,0 +1,13 @@
+<div style="border: 2px solid black; block-size: border-box; width: 90%; margin: 1rem auto; padding: 1rem;">
+{% if title %}
+    <h2>{{ title }}</h2>
+{% else %}
+    <h2>{% lorem 8 w %}</h2>
+{% endif %}
+
+    {% if details %}
+        <p>{{ details }}</p>
+    {% else %}
+        <p>{% lorem %}</p>
+    {% endif %}
+</div>
